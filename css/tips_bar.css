@@ -1,0 +1,9 @@
+#tips-bar{
+    height:15%;
+    width:70%;
+    left:15%;
+    bottom:4%;
+    background-color: #badaff;
+    border-radius: 2vh;
+    position: absolute;
+}

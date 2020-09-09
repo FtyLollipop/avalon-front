@@ -1,0 +1,60 @@
+#avatar-box-1,#avatar-box-2{
+    height:94%;
+    width:9%;
+    position: absolute;
+    /*background-color: #ffebbd;*/
+}
+
+#avatar-box-1{
+    top:3%;
+    left: 3%;
+}
+
+#avatar-box-2{
+    top:3%;
+    right:3%
+}
+
+.avatars{
+    height: 100%;
+    width:100%;
+    right:0;
+    padding:0;
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    /*background-color: #daa7ff;*/
+}
+
+.avatar{
+    height:20%;
+    width: 100%;
+    margin-bottom: 0;
+    float:top;
+    /*border-radius: 8px;*/
+    /*background-color: #FFD700;*/
+}
+
+.avatar-icon{
+    height:63.834%;
+    width:100%;
+    border-radius: 300px;
+    top:0;
+    background-color: #beffec;
+    cursor:pointer;
+}
+
+.avatar-name{
+    height:20%;
+    width:100%;
+    border-radius: 1.5vh;
+    background-color: #c6eeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:1px;
+}
