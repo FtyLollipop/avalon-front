@@ -3,7 +3,8 @@
     width:70%;
     left:15%;
     bottom:4%;
-    background-color: #badaff;
+    background-color: rgba(232, 232, 181, 0.85);
+    box-shadow: 2px 2px 2px 2px #d6d6a6;
     border-radius: 2vh;
     position: absolute;
 }
