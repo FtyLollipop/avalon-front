@@ -1,4 +1,5 @@
-window.onload=function(){
+$(document).ready(function(){
+    draw_avatar();
     setInterval(function(){
         screenHeight=window.innerHeight;
         screenWidth=window.innerWidth;
@@ -9,6 +10,5 @@ window.onload=function(){
             $("#ui-box").css("width",screenWidth);
             $("#ui-box").css("height",screenWidth*0.75);
         }
-
     },100);
-};
+});
