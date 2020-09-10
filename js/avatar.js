@@ -10,12 +10,13 @@ function hide_name(span){
 function draw_avatar(){
     let avatar_element='<div class="avatar">\n' +
         '<div class="avatar-icon"></div>\n' +
+        '<div class="avatar-ok"></div>\n' +
+        '<div class="avatar-wait"></div>\n' +
+        '<div class="avatar-disconnected"></div>\n' +
         ' <div class="avatar-number">1</div>\n' +
         '<div class="avatar-me"></div>\n' +
         '<div class="avatar-leader"></div>\n' +
         '<div class="avatar-character"></div>\n' +
-        '<div class="avatar-character-1"></div>\n' +
-        '<div class="avatar-character-2"></div>\n' +
         '<div class="avatar-name"><span onmouseenter="display_name(this)" onmouseleave="hide_name(this)">无</span></div>\n' +
         '</div>';
     let avatar_str;
