@@ -1,0 +1,10 @@
+#mouse-tip{
+    max-height: 70%;
+    max-width:30%;
+    font-size:1vmax;
+    background-color: #cef5ff;
+    border-radius: 1vmin;
+    padding:1vmin;
+    position: absolute;
+    display: none;
+}
