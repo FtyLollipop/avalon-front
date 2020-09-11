@@ -1,0 +1,35 @@
+#cover{
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    display:none;
+}
+
+#cover-message{
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    /*background-color: #cef5ff;*/
+    font-size: 2vmax;
+    font-weight: bold;
+    color: #c4c4c4;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+    word-break:keep-all;
+    position: absolute;
+    display:none;
+}
+
+.cover-display #cover{
+    display:inline;
+}
+
+.cover-display #cover-message{
+    display:flex;
+}
