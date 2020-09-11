@@ -13,9 +13,9 @@ function draw_avatar(){
         '<div class="avatar-ok"></div>\n' +
         '<div class="avatar-wait"></div>\n' +
         '<div class="avatar-disconnected"></div>\n' +
-        ' <div class="avatar-number" onmouseenter="display_avatar_number_mouse_tip(this)" onmouseleave="hide_avatar_number_mouse_tip(this)">1</div>\n' +
-        '<div class="avatar-me" onmouseenter="display_avatar_me_mouse_tip(this)" onmouseleave="hide_avatar_me_mouse_tip(this)"></div>\n' +
-        '<div class="avatar-leader" onmouseenter="display_avatar_leader_mouse_tip(this)" onmouseleave="hide_avatar_leader_mouse_tip(this)"></div>\n' +
+        ' <div class="avatar-number" onmouseenter="display_avatar_number_mouse_tip(this)" onmouseleave="hide_mouse_tip(this)">1</div>\n' +
+        '<div class="avatar-me" onmouseenter="display_avatar_me_mouse_tip(this)" onmouseleave="hide_mouse_tip(this)"></div>\n' +
+        '<div class="avatar-leader" onmouseenter="display_avatar_leader_mouse_tip(this)" onmouseleave="hide_mouse_tip(this)"></div>\n' +
         '<div class="avatar-character" onmouseenter="display_avatar_character_mouse_tip(this)" onmouseleave="hide_avatar_character_mouse_tip(this)"></div>\n' +
         '<div class="avatar-name"><span onmouseenter="display_name(this)" onmouseleave="hide_name(this)">无</span></div>\n' +
         '</div>';

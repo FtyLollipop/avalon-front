@@ -5,6 +5,6 @@
     background-color: #cef5ff;
     border-radius: 1vmin;
     padding:1vmin;
-    position: absolute;
+    position: fixed;
     display: none;
 }

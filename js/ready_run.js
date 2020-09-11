@@ -12,3 +12,10 @@ $(document).ready(function(){
         }
     },100);
 });
+
+$(document).mousemove(function (e) {
+    let xPos = parseInt(e.clientX+10) + "px";
+    let yPos = parseInt(e.clientY+10) + "px";
+    $("#mouse-tip").css("left", xPos);
+    $("#mouse-tip").css("top", yPos);
+});
