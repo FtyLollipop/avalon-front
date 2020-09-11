@@ -91,7 +91,7 @@
     box-shadow: 1px 1px 1px 1px #a9b494;
 }
 
-.avatar-name-display{
+.avatar-name-full-display{
     overflow:visible;
 }
 
@@ -121,7 +121,7 @@
     background-size: contain;
     overflow:hidden;
     position: absolute;
-    /*display:none;*/
+    display:none;
 }
 
 .avatar-number{
@@ -134,7 +134,6 @@
     background-color: #fdffbf;
     font-size:2vh;
     font-weight: bold;
-    /*box-shadow: 1px 1px 1px 1px #b1b1b1;*/
     position: absolute;
     overflow:hidden;
     display: flex;
@@ -142,7 +141,7 @@
     justify-content: center;
     word-break:keep-all;
     white-space:nowrap;
-    /*display:none;*/
+    display:none;
 }
 
 .avatar-character{
@@ -154,8 +153,7 @@
      /*background-color: #ff0a07;*/
      /*box-shadow: 1px 1px 1px 1px rgba(177, 177, 177, 0.79);*/
      position: absolute;
-     /*display:none;*/
-     background-color: blue;
+     display:none;
  }
 
 .avatar-character .character-blue{
@@ -198,5 +196,5 @@
     /*background-color: #ff0a07;*/
     /*box-shadow: 1px 1px 1px 1px #b1b1b1;*/
     position: absolute;
-    /*display:none;*/
+    display:none;
 }

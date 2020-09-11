@@ -1,10 +1,10 @@
 function display_name(span){
     console.log(1);
-    $(span).parent().addClass("avatar-name-display");
+    $(span).parent().addClass("avatar-name-full-display");
 }
 
 function hide_name(span){
-    $(span).parent().removeClass("avatar-name-display");
+    $(span).parent().removeClass("avatar-name-full-display");
 }
 
 function draw_avatar(){
