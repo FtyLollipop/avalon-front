@@ -15,7 +15,8 @@ function display_avatar_leader_mouse_tip(div){
 }
 
 function display_avatar_character_mouse_tip(div){
-
+    $("#mouse-tip").html("该玩家可能是梅林或莫甘娜 该玩家是湖中仙女");
+    $("#mouse-tip").show();
 }
 
 function hide_mouse_tip(div){
