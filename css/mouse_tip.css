@@ -5,6 +5,19 @@
     background-color: #cef5ff;
     border-radius: 1vmin;
     padding:1vmin;
+    white-space:nowrap;
     position: fixed;
     display: none;
+}
+
+.mouse-tip-x-pos{
+    transform:translateX(-100%);
+}
+
+.mouse-tip-y-pos{
+    transform:translateY(-100%);
+}
+
+.mouse-tip-xy-pos{
+    transform:translate(-100%,-100%);
 }
