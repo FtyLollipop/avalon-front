@@ -19,15 +19,16 @@ function inform_vote(mode,func_1,func_2){
 
 function inform_confirm(func){
     $("#inform-box").addClass("inform-confirm");
-    $("#confirm-button").off().on("click",func());
-    $("#confirm-box").removeClass("inform-confirm");
+    func();
 }
 
 function inform_confirm_clickable(func){
-    $("#confirm-button").on("click",func()).stop().animate({"background-color":"#ffc765","box-shadow":"2px 2px 2px 2px #9b7248"},50);
-
+    $("#confirm-button").on("click",function(){
+        func();
+        $("#confirm-box").removeClass("inform-confirm");
+    }).stop().addClass("confirm-clickable").animate({"background-color":"#ffc765","box-shadow":"2px 2px 2px 2px #9b7248"},50);
 }
 
-function inform_confirm_not_clickable(func){
-    $("#confirm-button").off().stop();
+function inform_confirm_not_clickable(){
+    $("#confirm-button").off().stop().removeClass("confirm-clickable").animate({"background-color":"#a7a199","box-shadow":"2px 2px 2px 2px #85796c"},50);
 }

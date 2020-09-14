@@ -92,8 +92,8 @@
 }
 
 .inform-confirm .confirm-clickable #confirm-button{
-    background-color: #ffc765;
-    box-shadow: 2px 2px 2px 2px #9b7248;
+    /*background-color: #ffc765;*/
+    /*box-shadow: 2px 2px 2px 2px #9b7248;*/
     cursor:pointer;
 }
 
