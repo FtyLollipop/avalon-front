@@ -25,3 +25,13 @@ function draw_avatar(){
     $(".avatars")[0].innerHTML=avatar_str;
     $(".avatars")[1].innerHTML=avatar_str;
 }
+
+function avatar_clickable(avatar,func){
+    avatar.addClass("avatar-clickable");
+    avatar.on("click",func());
+}
+
+function avatar_not_clickable(avatar){
+    avatar.removeClass("avatar-clickable");
+    avatar.unbind("click");
+}

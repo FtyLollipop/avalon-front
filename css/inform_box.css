@@ -42,6 +42,10 @@
     position: absolute;
 }
 
+#vote-agree,#vote-against{
+    cursor:pointer;
+}
+
 #vote-agree{
     /*margin-left: 0;*/
     background-color: blue;
@@ -81,18 +85,24 @@
 }
 
 #confirm-button{
-    background-color: #ffc765;
-    box-shadow: 2px 2px 2px 2px #9b7248;
+    background-color: #a7a199;
+    box-shadow: 2px 2px 2px 2px #85796c;
     left:35%;
     display:none;
 }
 
-#confirm-button:hover{
+.inform-confirm .confirm-clickable #confirm-button{
+    background-color: #ffc765;
+    box-shadow: 2px 2px 2px 2px #9b7248;
+    cursor:pointer;
+}
+
+.inform-clickable #confirm-button:hover{
     background-color: #ffdb90;
     box-shadow: 2px 2px 2px 2px #9b8463;
 }
 
-#confirm-button:active{
+.inform-clickable #confirm-button:active{
     background-color: #ffc765;
     box-shadow: -1px -1px 0 1px #9b7248;
     padding:1px 0 0 1px;
@@ -102,6 +112,6 @@
     display:flex;
 }
 
-.inform-confirm #confirm-button{
+.inform-clickable #confirm-button{
     display:flex;
 }

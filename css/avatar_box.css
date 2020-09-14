@@ -49,10 +49,6 @@
     background-size: contain;
 }
 
-.avatar-clickable{
-    cursor:pointer;
-}
-
 .avatar-ok,.avatar-wait,.avatar-disconnected{
     height:47.8755%;
     width:75%;
@@ -197,4 +193,25 @@
     /*box-shadow: 1px 1px 1px 1px #b1b1b1;*/
     position: absolute;
     display:none;
+}
+
+.avatar-clickable .avatar-icon{
+    cursor:pointer;
+    box-shadow:0 0 0 0.2vh #138167
+}
+
+.avatar-clickable .avatar-icon:hover{
+    box-shadow:0 0 0 0.4vh #DAA520;
+}
+
+.avatar-clickable .avatar-icon:active{
+    box-shadow:0 0 0.6vh 0.9vh #DAA520;
+}
+
+.avatar-chosen{
+    box-shadow:0 0 0.6vh 0.9vh #DAA520;
+}
+
+.avatar-clickable .avatar-chosen:hover{
+    box-shadow:0 0 0.6vh 0.9vh #da752e;
 }

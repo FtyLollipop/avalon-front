@@ -1,4 +1,6 @@
 var screenHeight;
 var screenWidth;
-var players;
+var server_address;
+var players=[];
+var player_number;
 var rounds;
