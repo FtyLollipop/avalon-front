@@ -1,5 +1,4 @@
 function display_name(span){
-    console.log(1);
     $(span).parent().addClass("avatar-name-full-display");
 }
 
