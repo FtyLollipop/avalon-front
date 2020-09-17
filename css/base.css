@@ -8,7 +8,7 @@ html, body {
     user-select: none;
 }
 
-#background{
+.background{
     height: 100%;
     width:100%;
     margin: auto;
@@ -18,7 +18,7 @@ html, body {
     position: absolute;
 }
 
-#ui-box {
+.ui-box {
     height: 100%;
     width:100%;
     /*background-color: #819cb3;*/

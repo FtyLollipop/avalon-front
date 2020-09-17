@@ -1,0 +1,81 @@
+#login-box{
+    height: 60%;
+    width:50%;
+    top:30%;
+    left:25%;
+    background: white;
+    overflow: hidden;
+    border-radius: 2vmax;
+    position: absolute;
+}
+
+#login-box-slider{
+    height: 100%;
+    width:200%;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
+#login,#register{
+    height: 100%;
+    width:50%;
+    top:0;
+    background: #f8f9fe;
+    position:absolute;
+}
+
+#login{
+    left: 0;
+}
+
+#register{
+    left:50%;
+}
+
+#login-user-name-box,#login-password-box,#login-captcha-box{
+    height: 15%;
+    width:80%;
+    left: 10%;
+    position: absolute;
+}
+
+#login-user-name-box{
+    top:10%;
+}
+
+#login-password-box{
+    top:27%;
+}
+
+#login-captcha-box{
+    top:44%;
+}
+
+.login-input-box,.login-input-box-placeholder{
+    height: 50%;
+    width: calc(100% - 3.4vmin);
+    border-radius:100px;
+    border:0;
+    padding:0 1.7vmin 0 1.7vmin;
+    font-size:2.5vmin;
+    outline:none;
+}
+
+.login-input-box{
+    bottom:0;
+    position: absolute;
+    box-shadow:0 0 0 1px gray;
+    color:inherit;
+    background-color:#ebebeb;
+    opacity:0.5;
+}
+
+.login-input-box-placeholder{
+    bottom:0;
+    position: absolute;
+    color:rgba(130,130,130,1);
+    display: flex;
+    align-items: center;
+
+}
