@@ -4,6 +4,7 @@
     top:30%;
     left:25%;
     background: white;
+    box-shadow: 0 0 7px 1px #c5c5c5;
     overflow: hidden;
     border-radius: 2vmax;
     position: absolute;
@@ -13,8 +14,38 @@
     height: 100%;
     width:200%;
     top:0;
-    left:0;
+    /*left:0;*/
+    right:0;
     position: absolute;
+}
+
+.login-switch-button{
+    height:7%;
+    width:15%;
+    top:5%;
+    right:calc(10% + 2px);
+    font-size:2vmin;
+    color:white;
+    background: #4a9be0;
+    border-radius: 1vmin;
+    box-shadow: 0 0 0 1px #3b8bcf;
+    box-shadow: 0 0 4px 1px #c5c5c5;
+    overflow: visible;
+    white-space:nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor:pointer;
+}
+
+.login-switch-button:hover{
+    background: #67b0ee;
+}
+
+.login-switch-button:active{
+    background: #3f8aca;
+    box-shadow: none;
 }
 
 #login,#register{
@@ -30,32 +61,65 @@
 }
 
 #register{
-    left:50%;
+    right:0;
 }
 
-#login-user-name-box,#login-password-box,#login-captcha-box{
+#login-user-name-box,#login-password-box,#login-captcha-box,
+#register-user-name-box,#register-password-box,#register-confirm-password-box,#register-captcha-box{
     height: 15%;
     width:80%;
     left: 10%;
     position: absolute;
 }
 
-#login-user-name-box{
+#login-user-name-box,#register-user-name-box{
     top:10%;
 }
 
-#login-password-box{
+#login-password-box,#register-password-box{
     top:27%;
 }
 
-#login-captcha-box{
+#login-captcha-box,#register-confirm-password-box{
     top:44%;
 }
+
+#register-captcha-box{
+    top:61%;
+}
+
+#login-button,#register-button{
+    height:8%;
+    width:60%;
+    left:20%;
+    border-radius:100px;
+    font-size:2vmin;
+    color:white;
+    background: #4a9be0;
+    box-shadow: 0 0 0 1px #3b8bcf;
+    box-shadow: 0 0 4px 1px #c5c5c5;
+    overflow: visible;
+    white-space:nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor:pointer;
+}
+
+#login-button{
+    top:67%;
+}
+
+#register-button{
+    top:84%;
+}
+
 
 .login-input-box,.login-input-box-placeholder{
     height: 50%;
     width: calc(100% - 3.4vmin);
-    border-radius:100px;
+    border-radius:1em;
     border:0;
     padding:0 1.7vmin 0 1.7vmin;
     font-size:2.5vmin;
@@ -65,7 +129,7 @@
 .login-input-box{
     bottom:0;
     position: absolute;
-    box-shadow:0 0 0 1px gray;
+    box-shadow:0 0 0 1px #808080;
     color:inherit;
     background-color:#ebebeb;
     opacity:0.5;
@@ -74,8 +138,23 @@
 .login-input-box-placeholder{
     bottom:0;
     position: absolute;
-    color:rgba(130,130,130,1);
+    color: gray;
     display: flex;
     align-items: center;
+}
 
+.captcha-img{
+    height: 50%;
+    width:25.3125%;
+    bottom:0;
+    left:1px;
+    box-shadow: 0 0 0 1px #818181;
+    background: #bcbcbc;
+    position: absolute;
+    cursor: pointer;
+}
+
+.login-captcha-input-box,.login-captcha-input-box-placeholder{
+    width:63%;
+    right:0;
 }
