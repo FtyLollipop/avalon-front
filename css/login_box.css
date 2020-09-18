@@ -14,38 +14,9 @@
     height: 100%;
     width:200%;
     top:0;
-    /*left:0;*/
-    right:0;
+    left:0;
+    /*right:0;*/
     position: absolute;
-}
-
-.login-switch-button{
-    height:7%;
-    width:15%;
-    top:5%;
-    right:calc(10% + 2px);
-    font-size:2vmin;
-    color:white;
-    background: #4a9be0;
-    border-radius: 1vmin;
-    box-shadow: 0 0 0 1px #3b8bcf;
-    box-shadow: 0 0 4px 1px #c5c5c5;
-    overflow: visible;
-    white-space:nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    cursor:pointer;
-}
-
-.login-switch-button:hover{
-    background: #67b0ee;
-}
-
-.login-switch-button:active{
-    background: #3f8aca;
-    box-shadow: none;
 }
 
 #login,#register{
@@ -88,11 +59,7 @@
     top:61%;
 }
 
-#login-button,#register-button{
-    height:8%;
-    width:60%;
-    left:20%;
-    border-radius:100px;
+.login-switch-button,#login-button,#register-button{
     font-size:2vmin;
     color:white;
     background: #4a9be0;
@@ -107,6 +74,21 @@
     cursor:pointer;
 }
 
+.login-switch-button{
+    height:7%;
+    width:15%;
+    top:5%;
+    right:calc(10% + 2px);
+    border-radius: 1vmin;
+}
+
+#login-button,#register-button{
+    height:8%;
+    width:60%;
+    left:20%;
+    border-radius:1.2em;
+}
+
 #login-button{
     top:67%;
 }
@@ -115,6 +97,14 @@
     top:84%;
 }
 
+.login-switch-button:hover,#login-button:hover,#register-button:hover{
+    background: #67b0ee;
+}
+
+.login-switch-button:active,#login-button:active,#register-button:active{
+    background: #3f8aca;
+    box-shadow: none;
+}
 
 .login-input-box,.login-input-box-placeholder{
     height: 50%;
