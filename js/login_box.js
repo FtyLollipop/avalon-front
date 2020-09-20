@@ -35,11 +35,37 @@ function bind_login_box_animation(){
         $(this).stop().animate({"border-radius":"1.2em"},300);
     })
 
+    $("#register-user-agreement-checkbox").on("click",function(){
+        if($("#register-user-agreement-box").hasClass("checked"))
+            $("#register-user-agreement-checkbox").stop().animate({"opacity":0.3},50,"swing",function(){
+                $("#register-user-agreement-box").removeClass("checked");
+            });
+        else{
+            $("#register-user-agreement-box").addClass("checked");
+            $("#register-user-agreement-checkbox").stop().animate({"opacity":1},100);
+        }
+
+    })
+
+    $("#register").hide();
+
     $("#switch-to-register").on("click",function (){
-        $("#login-box-slider").stop().animate({"left":"-100%"},300);
+        $("#register").show();
+        $("#login-box-slider").css("height",$("#login-box-slider").css("height"));
+        $("#login-box").stop().animate({"height":"65%"},300);
+        $("#login-box-slider").stop().animate({"left":"-100%",},300,"swing",function(){
+            $("#login").hide();
+            $("#login-box-slider").css("height","100%");
+        });
     })
 
     $("#switch-to-login").on("click",function (){
-        $("#login-box-slider").stop().animate({"left":"0"},300);
+        $("#login").show();
+        $("#login-box-slider").css("height",$("#login-box-slider").css("height"));
+        $("#login-box").stop().animate({"height":"50%"},300);
+        $("#login-box-slider").stop().animate({"left":"0"},300,"swing",function(){
+            $("#register").hide();
+            $("#login-box-slider").css("height","130%");
+        });
     })
 }

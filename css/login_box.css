@@ -1,5 +1,25 @@
+#login-logo{
+    height: 25%;
+    width:100%;
+    top:3%;
+    font-size: 7vmax;
+    color: #3493e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break:keep-all;
+    position: absolute;
+}
+
+#login-logo span{
+    font-size: 1vmax;
+    color: #074881;
+    vertical-align:bottom;
+    margin-top:4.5vmax;
+}
+
 #login-box{
-    height: 60%;
+    height: 50%;
     width:50%;
     top:30%;
     left:25%;
@@ -11,7 +31,7 @@
 }
 
 #login-box-slider{
-    height: 100%;
+    height: 130%;
     width:200%;
     top:0;
     left:0;
@@ -37,26 +57,74 @@
 
 #login-user-name-box,#login-password-box,#login-captcha-box,
 #register-user-name-box,#register-password-box,#register-confirm-password-box,#register-captcha-box{
-    height: 15%;
+    height: 13%;
     width:80%;
     left: 10%;
     position: absolute;
 }
 
 #login-user-name-box,#register-user-name-box{
-    top:10%;
+    top:9%;
 }
 
 #login-password-box,#register-password-box{
-    top:27%;
+    top:24%;
 }
 
 #login-captcha-box,#register-confirm-password-box{
-    top:44%;
+    top:39%;
 }
 
 #register-captcha-box{
-    top:61%;
+    top:54%;
+}
+
+#register-user-agreement-box{
+    height:10%;
+    width:100%;
+    top:70%;
+    font-size:2.2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break:keep-all;
+    position: absolute;
+}
+
+#register-user-agreement-checkbox{
+    height:2.2vmin;
+    width:2.2vmin;
+    border-radius: 0.2vmin;
+    border:0;
+    box-shadow: 0 0 0 1px #00559f;
+    margin-right: 0.8vmin;
+    opacity: 0.3;
+    cursor:pointer;
+}
+
+#register-user-agreement-checkbox:hover{
+    box-shadow: 0 0 4px 1px #00559f;
+    background-color: #c6dffd;
+}
+
+.checked #register-user-agreement-checkbox{
+    background-color: #3b8bcf;
+    box-shadow: 0 0 0 1px #3689d0;
+    background-image:url(../img/checked.svg);
+    background-size: contain;
+}
+
+.checked #register-user-agreement-checkbox:hover{
+    box-shadow: 0 0 4px 1px #0561b1;
+}
+
+#register-user-agreement-box a{
+    color:#3b8bcf;
+    text-decoration: none;
+}
+
+#register-user-agreement-box a:hover{
+    color: #554ccd;
 }
 
 .login-switch-button,#login-button,#register-button{
@@ -75,7 +143,7 @@
 }
 
 .login-switch-button{
-    height:7%;
+    height:6.3%;
     width:15%;
     top:5%;
     right:calc(10% + 2px);
@@ -83,14 +151,14 @@
 }
 
 #login-button,#register-button{
-    height:8%;
+    height:7.2%;
     width:60%;
     left:20%;
     border-radius:1.2em;
 }
 
 #login-button{
-    top:67%;
+    top:60%;
 }
 
 #register-button{
