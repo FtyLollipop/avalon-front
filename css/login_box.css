@@ -63,6 +63,28 @@
     position: absolute;
 }
 
+#login-forget-password{
+    height:7%;
+    width:30%;
+    top:24%;
+    right:5%;
+    font-size:2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break:keep-all;
+    position: absolute;
+}
+
+#login-forget-password a{
+    color:#3b8bcf;
+    text-decoration: none;
+}
+
+#login-forget-password a:hover{
+    color: #554ccd;
+}
+
 #login-user-name-box,#register-user-name-box{
     top:9%;
 }
@@ -125,6 +147,20 @@
 
 #register-user-agreement-box a:hover{
     color: #554ccd;
+}
+
+#login-tip,#register-tip{
+    height: 6.3%;
+    width:45%;
+    top:5%;
+    left:25%;
+    font-size:2vmin;
+    color:red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break:keep-all;
+    position: absolute;
 }
 
 .login-switch-button,#login-button,#register-button{
