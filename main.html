@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/main_base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main_profile_box.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main_room_box.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main_create_room.css"/>
 
     <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
     <script src="js/global_var.js" type="text/javascript"></script>
@@ -16,7 +19,36 @@
 <body>
     <div class="background">
         <div class="ui-box">
+            <div id="profile-box">
+                <div id="avatar"></div>
+                <div id="user-name">FtyLollipop</div>
+                <div id="edit-button"></div>
+            </div>
+            <div id="room-box">
+                <div id="room-title">
+                    <span id="room-title-id">房间号</span>
+                    <span id="room-title-owner">房主</span>
+                    <span id="room-title-players">人数</span>
+                    <span id="room-title-status">状态</span>
+                </div>
+                <div id="rooms">
+                    <ul>
+                        <li>
+                            <div class="room-locked room-locked-true"></div>
+                            <span class="room-id">25565</span>
+                            <span class="room-owner">ZBS233</span>
+                            <span class="room-players">6/10</span>
+                            <span class="room-status">等待中</span>
+                            <div class="enter-button enter-button-clickable">进入</div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="room-foot">
 
+                </div>
+            </div>
+            <div id="create-button"></div>
+            <div id="create-room"></div>
         </div>
     </div>
 </body>

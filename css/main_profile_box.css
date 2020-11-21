@@ -1,0 +1,56 @@
+#profile-box {
+    height: 8%;
+    width: 40%;
+    left: 2.5%;
+    top: 3%;
+    border-radius: 1vmin;
+    border:4px solid #93c2e9;
+    box-shadow:1px 1px 1px 1px #6995b7;
+    background-color: #93c2e9;
+    position: absolute;
+}
+
+#avatar {
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 2%;
+    border-radius: 300px;
+    /*background-color: #8a8a8a;*/
+    box-shadow:0 0 0 1px #689ecd;
+    background:url("../img/ftyavatar.png");
+    background-size: contain;
+    position: absolute;
+}
+
+#user-name {
+    height: 64%;
+    width: 64%;
+    top: 18%;
+    left: 20%;
+    font-size:3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    box-shadow:-1px -1px 0 1px #6f7e86;
+    background-color: #c2deee;
+    position: absolute;
+    user-select: text;
+}
+
+#edit-button{
+    height: 50%;
+    width: 7.5%;
+    top: 25%;
+    left:89%;
+    background:url("../img/edit.svg");
+    background-size: contain;
+    cursor:pointer;
+    position: absolute;
+}
+
+#edit-button:hover{
+    background:url("../img/edit_hover.svg");
+    background-size: contain;
+}

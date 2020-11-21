@@ -1,0 +1,199 @@
+#room-box {
+    height: 60%;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    border-radius: 2vmin;
+    box-shadow: 0 0 0 3px #7ac0fa;
+    /*box-shadow: 4px 4px 2px 2px #598fcd;*/
+    overflow: hidden;
+    position: absolute;
+}
+
+#room-title {
+    height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #3b8bcf;
+    position: absolute;
+}
+
+.room-locked{
+    height: 2vmin;
+    width: 2vmin;
+    left:0.1%;
+    top:1%;
+    background:url("../img/locked.svg");
+    background-size: contain;
+    position: absolute;
+}
+
+#room-title span{
+    height:80%;
+    top:10%;
+    font-size: 2.7vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    position: absolute;
+}
+
+#room-title-id{
+    width:15%;
+    left:2%;
+}
+
+#room-title-owner{
+    width:25%;
+    left:18%;
+}
+
+#room-title-players{
+    width:12%;
+    left:44%;
+}
+
+#room-title-status{
+    width:20%;
+    left:57%;
+}
+
+#rooms {
+    height: 83%;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    background-color: #7ac0fa;
+    position: absolute;
+    overflow: hidden;
+}
+
+#rooms ul {
+    height: 100%;
+    width: 100%;
+    padding:0;
+    top:0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position:absolute;
+}
+
+#rooms li{
+    height:11%;
+    width:97%;
+    float: left;
+    /*margin-top:1%;*/
+    /*margin-left:2%;*/
+    margin:0.5% 0 0.5% 1.5%;
+    position: relative;
+    display:inline-block;
+    background-color: #419cea;
+    box-shadow:1px 1px 1px 1px #236399;
+}
+
+#rooms li span{
+    height:86%;
+    top:6%;
+    font-size: 2.5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    position: absolute;
+
+}
+
+.room-id{
+    width:15%;
+    left:1%;
+    user-select: text;
+}
+
+.room-owner{
+    width:25%;
+    left:17%;
+    user-select: text;
+}
+
+.room-players{
+    width:14%;
+    left:43%;
+}
+
+.room-status{
+    width:20%;
+    left:58%;
+}
+
+.enter-button{
+    height:70%;
+    width:8%;
+    top:15%;
+    left:85%;
+    border-radius: 0.7vmin;
+    font-size: 2.3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    background-color: #6e7072;
+    box-shadow:-1px -1px 0 1px #515356;
+    padding:1px 0 0 1px;
+    position: absolute;
+}
+
+.enter-button-clickable{
+    padding:0;
+    background-color: #4b7fcb;
+    box-shadow:1px 1px 1px 1px #176bb3;
+    cursor:pointer;
+}
+
+.enter-button-clickable:hover{
+    background-color: #5889d2;
+    box-shadow:1px 1px 1px 1px #2c7abc;
+}
+
+.enter-button-clickable:active{
+    background-color: #386ebe;
+    box-shadow:-1px -1px 0 1px #0e5fa4;
+    padding:1px 0 0 1px;
+}
+
+#rooms ul::-webkit-scrollbar
+{
+    width: 2vmin;
+    background-color: #7ac0fa;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+#rooms ul::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 1vmax;
+    background-color: #8bc2ef;
+}
+
+/*定义滑块 内阴影+圆角*/
+#rooms ul::-webkit-scrollbar-thumb
+{
+    border-radius: 1vmax;
+    /*box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+    background-color: #1588e3;
+}
+
+#room-foot{
+    height:7%;
+    width:100%;
+    bottom:0;
+    left: 0;
+    background-color: #3b8bcf;
+    position:absolute;
+}
+
+#create{
+
+}
