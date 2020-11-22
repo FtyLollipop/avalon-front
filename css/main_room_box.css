@@ -1,11 +1,19 @@
-#room-box {
+#room-box{
     height: 60%;
     width: 80%;
     top: 20%;
     left: 10%;
     border-radius: 2vmin;
+    box-shadow: 4px 4px 4px 4px #67b3ef;
+    background-color: #7ac0fa;
+    position: absolute;
+}
+
+#room-box-inner {
+    height:100%;
+    width:100%;
+    border-radius: 2vmin;
     box-shadow: 0 0 0 3px #7ac0fa;
-    /*box-shadow: 4px 4px 2px 2px #598fcd;*/
     overflow: hidden;
     position: absolute;
 }
@@ -85,8 +93,6 @@
     height:11%;
     width:97%;
     float: left;
-    /*margin-top:1%;*/
-    /*margin-left:2%;*/
     margin:0.5% 0 0.5% 1.5%;
     position: relative;
     display:inline-block;

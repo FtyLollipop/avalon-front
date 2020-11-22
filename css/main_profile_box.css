@@ -17,20 +17,22 @@
     left: 2%;
     border-radius: 300px;
     /*background-color: #8a8a8a;*/
-    box-shadow:0 0 0 1px #689ecd;
-    background:url("../img/ftyavatar.png");
+    box-shadow:0 0 0 1px #9ba4ac;
     background-size: contain;
     position: absolute;
 }
 
-#user-name {
+#display-name,#display-name-input {
     height: 64%;
-    width: 64%;
+    width: calc(64% - 2.4vmin);
     top: 18%;
     left: 20%;
+    padding:0 1.7vmin 0 1.7vmin;
+    border-radius: 1vmin;
     font-size:3vmin;
     display: flex;
     align-items: center;
+    vertical-align:middle;
     justify-content: center;
     line-height: 100%;
     box-shadow:-1px -1px 0 1px #6f7e86;
@@ -39,7 +41,14 @@
     user-select: text;
 }
 
-#edit-button{
+#display-name-input{
+    background-color: #ecf7fd;
+    border:0;
+    outline:none;
+    display:none;
+}
+
+#edit-button,#save-button{
     height: 50%;
     width: 7.5%;
     top: 25%;
@@ -47,10 +56,36 @@
     background:url("../img/edit.svg");
     background-size: contain;
     cursor:pointer;
+    display:block;
     position: absolute;
+}
+
+#save-button{
+    background:url("../img/save.svg");
+    background-size: contain;
+    display: none;
 }
 
 #edit-button:hover{
     background:url("../img/edit_hover.svg");
     background-size: contain;
+    transform:translateY(-1px);
+}
+
+#save-button:hover{
+    background:url("../img/save_hover.svg");
+    background-size: contain;
+    transform:translateY(-1px);
+}
+
+#edit-button:active{
+    background:url("../img/edit_active.svg");
+    background-size: contain;
+    transform:translateY(1px);
+}
+
+#save-button:active{
+    background:url("../img/save_active.svg");
+    background-size: contain;
+    transform:translateY(1px);
 }

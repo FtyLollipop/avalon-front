@@ -1,3 +1,27 @@
 #create-button{
+    height:8%;
+    width:28%;
+    top:85%;
+    left: 36%;
+    border-radius: 2vmin;
+    background-color: #f6f0b6;
+    box-shadow:2px 2px 2px 2px #d0c984;
+    font-size:3vmin;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
 
+#create-button:hover{
+    background-color: #f8f3c5;
+    box-shadow:2px 2px 2px 2px #d6d098;
+}
+
+#create-button:active{
+    background-color: #f1eaa3;
+    box-shadow:-2px -2px 2px 2px #c8c071;
+    padding:2px 0 0 2px;
 }
