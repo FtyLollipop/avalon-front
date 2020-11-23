@@ -13,16 +13,16 @@ html, body {
     width:100%;
     margin: auto;
     padding:0;
-    /*background-color: #c6eeff;*/
-    background:url(../img/background.jpg);
+    background-color: #e8f3fc;
+    /*background:url(../img/background.jpg);*/
     position: absolute;
 }
 
 .ui-box {
     height: 100%;
     width:100%;
-    /*background-color: #819cb3;*/
-    background:url(../img/background_.jpg);
+    background-color: #efeee0;
+    /*background:url(../img/background_.jpg);*/
     margin:auto;
     padding:0;
     position:relative;

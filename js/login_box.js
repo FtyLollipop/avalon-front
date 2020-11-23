@@ -53,7 +53,7 @@ function bind_login_box_animation(){
         $("#register").show();
         $("#login-box-slider").css("height",$("#login-box-slider").css("height"));
         $("#login-box").stop().animate({"height":"65%"},300);
-        $("#login-box-slider").stop().animate({"left":"-100%",},300,"swing",function(){
+        $("#login-box-slider").stop().animate({"left":"-100%"},300,"swing",function(){
             $("#login").hide();
             $("#login-box-slider").css("height","100%");
         });

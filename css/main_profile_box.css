@@ -1,4 +1,4 @@
-#profile-box {
+#profile-box{
     height: 8%;
     width: 40%;
     left: 2.5%;
@@ -7,12 +7,21 @@
     border:4px solid #93c2e9;
     box-shadow:1px 1px 1px 1px #6995b7;
     background-color: #93c2e9;
+    overflow:hidden;
+    position: absolute;
+}
+
+#profile-box-inner {
+    height: 100%;
+    width: 125%;
+    top:0;
+    left:0;
     position: absolute;
 }
 
 #avatar {
     height: 100%;
-    width: 15%;
+    width: 12%;
     top: 0;
     left: 2%;
     border-radius: 300px;
@@ -24,9 +33,9 @@
 
 #display-name,#display-name-input {
     height: 64%;
-    width: calc(64% - 2.4vmin);
+    width: calc(48% - 2.4vmin);
     top: 18%;
-    left: 20%;
+    left: 18%;
     padding:0 1.7vmin 0 1.7vmin;
     border-radius: 1vmin;
     font-size:3vmin;
@@ -48,12 +57,12 @@
     display:none;
 }
 
-#edit-button,#save-button{
+#edit-button,#save-button,#cancel-button{
     height: 50%;
-    width: 7.5%;
+    width: 6%;
     top: 25%;
-    left:89%;
-    background:url("../img/edit.svg");
+    left:71%;
+    background:url("../img/edit.svg") no-repeat;
     background-size: contain;
     cursor:pointer;
     display:block;
@@ -61,31 +70,49 @@
 }
 
 #save-button{
-    background:url("../img/save.svg");
+    background:url("../img/save.svg") no-repeat;
     background-size: contain;
     display: none;
 }
 
+#cancel-button{
+    left:84%;
+    background:url("../img/cancel_edit.svg") no-repeat;
+    background-size: contain;
+}
+
 #edit-button:hover{
-    background:url("../img/edit_hover.svg");
+    background:url("../img/edit_hover.svg") no-repeat;
     background-size: contain;
     transform:translateY(-1px);
 }
 
 #save-button:hover{
-    background:url("../img/save_hover.svg");
+    background:url("../img/save_hover.svg") no-repeat;
+    background-size: contain;
+    transform:translateY(-1px);
+}
+
+#cancel-button:hover{
+    background:url("../img/cancel_edit_hover.svg") no-repeat;
     background-size: contain;
     transform:translateY(-1px);
 }
 
 #edit-button:active{
-    background:url("../img/edit_active.svg");
+    background:url("../img/edit_active.svg") no-repeat;
     background-size: contain;
     transform:translateY(1px);
 }
 
 #save-button:active{
-    background:url("../img/save_active.svg");
+    background:url("../img/save_active.svg") no-repeat;
+    background-size: contain;
+    transform:translateY(1px);
+}
+
+#cancel-button:active{
+    background:url("../img/cancel_edit_active.svg") no-repeat;
     background-size: contain;
     transform:translateY(1px);
 }
