@@ -177,7 +177,7 @@
 }
 
 .avatar-character .character-blue-red .character-fairy{
-    background: linear-gradient(90deg,blue 33.33%,red 33.33%  66.66%, pink 66.66%);
+    background: linear-gradient(90deg,blue 33.33%,red 66.66%, pink 100%);
 }
 
 .avatar-leader{

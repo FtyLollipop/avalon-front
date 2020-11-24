@@ -35,6 +35,11 @@
     background:url("../img/locked.svg");
     background-size: contain;
     position: absolute;
+    display:none;
+}
+
+.room-locked-true{
+    display:block;
 }
 
 #room-title span{
