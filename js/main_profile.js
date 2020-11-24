@@ -19,18 +19,29 @@ function bind_profile_controller(){
         hide_cancel_edit_button()
         $("#avatar").css("cursor","auto").removeAttr("title").unbind("click");
     });
+
+    $("#cancel-edit-button").on("click",function(){
+        $("#save-button").hide();
+        $("#edit-button").show();
+        $("#display-name-input").hide();
+        $("#display-name").show();
+        hide_cancel_edit_button()
+        $("#avatar").css("cursor","auto").removeAttr("title").unbind("click");
+    })
 }
 
 function show_cancel_edit_button(){
     $("#profile-box-inner").css({"width":$("#profile-box-inner").css("width")});
-    $("#profile-box").stop().animate({"width":"50%"},200,"swing",function(){
+    $("#profile-box").stop().animate({"width":"45%"},200,"swing",function(){
         $("#profile-box-inner").css({"width":"100%"});
     });
+    $("#cancel-edit-button").show();
 }
 
 function hide_cancel_edit_button(){
     $("#profile-box-inner").css({"width":$("#profile-box-inner").css("width")});
+    $("#cancel-edit-button").hide();
     $("#profile-box").stop().animate({"width":"40%"},200,"swing",function(){
-        $("#profile-box-inner").css({"width":"125%"});
+        $("#profile-box-inner").css({"width":"112.5%"});
     });
 }

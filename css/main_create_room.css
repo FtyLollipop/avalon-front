@@ -1,4 +1,4 @@
-#create-button{
+#create-room-button{
     height:8%;
     width:28%;
     top:85%;
@@ -15,13 +15,35 @@
     cursor: pointer;
 }
 
-#create-button:hover{
+#create-room-button:hover{
     background-color: #f8f3c5;
     box-shadow:2px 2px 2px 2px #d6d098;
 }
 
-#create-button:active{
+#create-room-button:active{
     background-color: #f1eaa3;
     box-shadow:-2px -2px 2px 2px #c8c071;
     padding:2px 0 0 2px;
+}
+
+#create-room-cover{
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    /*display:none;*/
+}
+
+#create-room-box{
+    height: 60%;
+    width: 60%;
+    top:20%;
+    left:20%;
+    border-radius: 2vmin;
+    box-shadow: 0 0 0 4px #c6ae71;
+    background-color: #f6f4df;
+    position: absolute;
 }

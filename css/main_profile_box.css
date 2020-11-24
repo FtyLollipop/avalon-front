@@ -13,7 +13,7 @@
 
 #profile-box-inner {
     height: 100%;
-    width: 125%;
+    width: 112.5%;
     top:0;
     left:0;
     position: absolute;
@@ -21,9 +21,9 @@
 
 #avatar {
     height: 100%;
-    width: 12%;
+    width: calc(12% / 0.9);
     top: 0;
-    left: 2%;
+    left: 2.2%;
     border-radius: 300px;
     /*background-color: #8a8a8a;*/
     box-shadow:0 0 0 1px #9ba4ac;
@@ -33,9 +33,9 @@
 
 #display-name,#display-name-input {
     height: 64%;
-    width: calc(48% - 2.4vmin);
+    width: calc(48% / 0.9 - 2.4vmin);
     top: 18%;
-    left: 18%;
+    left: 20%;
     padding:0 1.7vmin 0 1.7vmin;
     border-radius: 1vmin;
     font-size:3vmin;
@@ -57,11 +57,11 @@
     display:none;
 }
 
-#edit-button,#save-button,#cancel-button{
+#edit-button,#save-button,#cancel-edit-button{
     height: 50%;
-    width: 6%;
+    width: calc(6% / 0.9);
     top: 25%;
-    left:71%;
+    left:79%;
     background:url("../img/edit.svg") no-repeat;
     background-size: contain;
     cursor:pointer;
@@ -75,10 +75,11 @@
     display: none;
 }
 
-#cancel-button{
-    left:84%;
+#cancel-edit-button{
+    left:90%;
     background:url("../img/cancel_edit.svg") no-repeat;
     background-size: contain;
+    display:none;
 }
 
 #edit-button:hover{
@@ -93,7 +94,7 @@
     transform:translateY(-1px);
 }
 
-#cancel-button:hover{
+#cancel-edit-button:hover{
     background:url("../img/cancel_edit_hover.svg") no-repeat;
     background-size: contain;
     transform:translateY(-1px);
@@ -111,7 +112,7 @@
     transform:translateY(1px);
 }
 
-#cancel-button:active{
+#cancel-edit-button:active{
     background:url("../img/cancel_edit_active.svg") no-repeat;
     background-size: contain;
     transform:translateY(1px);
