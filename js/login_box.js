@@ -68,4 +68,8 @@ function bind_login_box_animation(){
             $("#login-box-slider").css("height","130%");
         });
     })
+
+    $("#user-agreements").on("click",function(){
+        window.open("user_agreements.html");
+    })
 }

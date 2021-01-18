@@ -1,19 +1,19 @@
-#round-counter{
-    height:6%;
-    width:50%;
-    left:25%;
-    top:3%;
+#leader-counter{
+    height:5%;
+    width:40%;
+    left:30%;
+    top:4%;
     border-radius: 1vh;
-    background: rgba(255, 242, 195, 0.75);
+    background:rgba(255, 242, 195, 0.75);
     box-shadow: 2px 2px 2px 2px rgba(204, 194, 156, 0.75);
-    position:relative;
+    position: relative;
 }
 
-#round-text{
+#leader-text{
     height:100%;
     width:30%;
     left:5%;
-    font-size:2.7vmin;
+    font-size:2.2vmin;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -23,15 +23,15 @@
     position:absolute;
 }
 
-#rounds-box{
+#leaders-box{
     height: 80%;
-    width:60%;
-    left:25%;
+    width:65%;
+    left:27%;
     top:10%;
     position: absolute;
 }
 
-#rounds{
+#leaders{
     height: 100%;
     width:100%;
     right:0;
@@ -41,12 +41,12 @@
     position: absolute;
 }
 
-.round{
+.leader{
     height: 100%;
-    width:12.1%;
+    width:11.538%;
     margin:auto auto auto 5%;
     border-radius: 100px;
-    box-shadow:0 0 0 0.2vmin #2f4230;
+    box-shadow:0 0 0 0.15vmin #2f4230;
     float:left;
     /*cursor:pointer;*/
     font-size:1.5vmax;
@@ -62,39 +62,14 @@
     background-size:contain;
 }
 
-.rounds-current{
-    box-shadow:0 0 0 0.4vmin #e2a4a7;
+.leader-last{
+    background-color: #a46161;
 }
 
-.rounds-blue{
-    background-color: blue;
-    font-size:0;
-    background-image:url(../img/success.svg);
+.leader-passed{
+    background-color: #505050;
 }
 
-.rounds-red{
-    background-color: red;
-    font-size:0;
-    background-image:url(../img/fail.svg);
-}
-
-#score{
-    height:100%;
-    width:20%;
-    right:3%;
-    font-size:2.8vmin;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    overflow:hidden;
-    justify-content: center;
-    position:absolute;
-}
-
-#blue-score{
-    color:blue;
-}
-
-#red-score{
-    color:red;
+.leader-current{
+    background-color: #9494be;
 }

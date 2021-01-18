@@ -34,7 +34,7 @@
     background-color: black;
     opacity: 0.5;
     position: absolute;
-    /*display:none;*/
+    display:none;
 }
 
 #create-room-box{
@@ -46,7 +46,7 @@
     box-shadow: 0 0 0 4px #c6ae71;
     background-color: #f6f4df;
     position: absolute;
-    /*display:none;*/
+    display:none;
 }
 
 #create-room-title{
@@ -96,4 +96,34 @@
     background-color: #f1eaa3;
     box-shadow:-1px -1px 1px 1px #c8c071;
     padding:1px 0 0 1px;
+}
+
+#require-password-box{
+    height:15%;
+    width:70%;
+    top:20%;
+    left:15%;
+    background: #9f7676;
+    position:absolute;
+}
+
+#require-password-checkbox{
+    height:2.2vmin;
+    width:2.2vmin;
+    border-radius: 0.2vmin;
+    border:0;
+    box-shadow: 0 0 0 1px #00559f;
+    background-color: #ddeafc;
+    margin-right: 0.8vmin;
+    opacity: 0.3;
+    cursor:pointer;
+}
+
+#require-password-checkbox:hover{
+    background-color: #bdd4f5;
+    box-shadow: 0 0 4px 1px #00559f;
+}
+
+#required-password{
+
 }

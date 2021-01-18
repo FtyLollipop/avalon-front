@@ -120,6 +120,7 @@
     border:0;
     box-shadow: 0 0 0 1px #00559f;
     margin-right: 0.8vmin;
+    background-color: #ddeafc;
     opacity: 0.3;
     cursor:pointer;
 }
