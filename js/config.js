@@ -1,1 +1,1 @@
-var apiUrl="http://localhost:9999";
+var apiUrl="http://192.168.0.39:8888";

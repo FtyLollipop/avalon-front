@@ -30,8 +30,8 @@ function bind_login_controller(){
             type:"post",
             url:apiUrl+"/register",
             data:{
-                username:$("#register-user-name").val(),
-                password:$("#register-password").val(),
+                userName:$("#register-user-name").val(),
+                userPassword:$("#register-password").val(),
                 captchaCode: $("#register-captcha-box").attr("code"),
                 captchaResult:$("#register-captcha").val()
             },
@@ -129,4 +129,14 @@ function bind_login_box_animation(){
     $("#user-agreements").on("click",function(){
         window.open("user_agreements.html");
     })
+}
+
+let loginTipThread
+function login_tip_set(val,str){
+    clearTimeout(loginTipThread);
+}
+
+let registerTipThread
+function register_tip_set(val,str){
+
 }
