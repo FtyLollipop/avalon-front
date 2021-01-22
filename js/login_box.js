@@ -14,6 +14,7 @@ function bind_login_controller(){
                 if(data.status==="true"){
                     $("#login-tip").html("登录成功");
                     $.cookie("token",data.content);
+                    window.location.replace("main.html");
                 }else{
                     $("#login-tip").html(data.content);
                 }
@@ -23,17 +24,27 @@ function bind_login_controller(){
     })
 
     $("#register-button").on("click",function(){
-        if($("#register-password").val()!==$("#register-confirm-password").val()){
+        let userName=$("#register-user-name").val();
+        let userPassword=$("#register-password").val();
+        let confirmPassword=$("#register-confirm-password").val();
+        let captchaCode=$("#register-captcha-box").attr("code");
+        let captchaResult=$("#register-captcha").val();
+        if(userPassword!==confirmPassword){
             $("#register-tip").html("两次输入的密码不相同");
+            return;
+        }
+        if($("#register-user-agreement-box").hasClass("checked")===false){
+            $("#register-tip").html("请先阅读并同意用户协议。。。。。。。。。。。。。。。。。。。");
+            return;
         }
         $.ajax({
             type:"post",
             url:apiUrl+"/register",
             data:{
-                userName:$("#register-user-name").val(),
-                userPassword:$("#register-password").val(),
-                captchaCode: $("#register-captcha-box").attr("code"),
-                captchaResult:$("#register-captcha").val()
+                userName:userName,
+                userPassword:userPassword,
+                captchaCode: captchaCode,
+                captchaResult:captchaResult
             },
             dataType:"json",
             success:function(data){

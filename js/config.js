@@ -1,1 +1,1 @@
-var apiUrl="http://192.168.0.39:8888";
+var apiUrl="http://127.0.0.1:8888";
