@@ -5,7 +5,7 @@ function bind_login_controller(){
             url:apiUrl+"/login",
             data:{
                 userName:$("#login-user-name").val(),
-                userPassword:$("#login-password").val(),
+                userPassword:$.md5($("#login-password").val()),
                 captchaCode: $("#login-captcha-box").attr("code"),
                 captchaResult:$("#login-captcha").val()
             },
@@ -42,7 +42,7 @@ function bind_login_controller(){
             url:apiUrl+"/register",
             data:{
                 userName:userName,
-                userPassword:userPassword,
+                userPassword:$.md5(userPassword),
                 captchaCode: captchaCode,
                 captchaResult:captchaResult
             },
