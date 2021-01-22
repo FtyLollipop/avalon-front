@@ -14,8 +14,6 @@
     <script src="js/adapt_ui.js" type="text/javascript"></script>
     <script src="js/login_ready_run.js" type="text/javascript"></script>
     <script src="js/login_box.js" type="text/javascript"></script>
-    <script src="js/login_controller.js" type="text/javascript"></script>
-    <script src="js/register_click.js" type="text/javascript"></script>
     <script src="js/config.js" type="text/javascript"></script>
 </head>
 <body>
@@ -34,7 +32,7 @@
                             <label for="login-password" class="login-input-box-placeholder">密码</label>
                             <input id="login-password" class="login-input-box" type="password">
                         </div>
-                        <div id="login-captcha-box">
+                        <div id="login-captcha-box" code="">
                             <div id="login-captcha-img" class="captcha-img"></div>
                             <label for="login-captcha" class="login-input-box-placeholder login-captcha-input-box-placeholder">计算结果</label>
                             <input id="login-captcha" class="login-input-box login-captcha-input-box" type="text">
@@ -42,7 +40,7 @@
                         <div id="login-forget-password"><a href="#">忘记密码</a></div>
                         <div id="login-tip"></div>
                         <div id="switch-to-register" class="login-switch-button">注册></div>
-                        <div id="login-button" onclick="login()">登录</div>
+                        <div id="login-button">登录</div>
                     </div>
 <!--登录部分结束-->
 <!--注册部分开始-->
@@ -60,7 +58,7 @@
                             <label for="register-confirm-password" class="login-input-box-placeholder">确认密码</label>
                             <input id="register-confirm-password" class="login-input-box" type="password">
                         </div>
-                        <div id="register-captcha-box">
+                        <div id="register-captcha-box" code="">
                             <div id="register-captcha-img" class="captcha-img"></div>
                             <label for="register-captcha" class="login-input-box-placeholder login-captcha-input-box-placeholder">计算结果</label>
                             <input id="register-captcha" class="login-input-box login-captcha-input-box" type="text">
@@ -71,7 +69,7 @@
                         </div>
                         <div id="register-tip"></div>
                         <div id="switch-to-login" class="login-switch-button">&lt;登录</div>
-                        <div id="register-button" onclick="register()">注册</div>
+                        <div id="register-button">注册</div>
 <!--注册部分结束-->
                     </div>
                 </div>

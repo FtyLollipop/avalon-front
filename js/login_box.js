@@ -1,3 +1,60 @@
+function bind_login_controller(){
+    $("#login-button").on("click",function(){
+        $.ajax({
+            type:"post",
+            url:apiUrl+"/login",
+            data:{
+                userName:$("#login-user-name").val(),
+                userPassword:$("#login-password").val(),
+                captchaCode: $("#login-captcha-box").attr("code"),
+                captchaResult:$("#login-captcha").val()
+            },
+            dataType:"json",
+            success:function(data){
+                if(data.status==="true"){
+                    $("#login-tip").html("登录成功");
+                    $.cookie("token",data.content);
+                }else{
+                    $("#login-tip").html(data.content);
+                }
+                console.log(data);
+            }
+        })
+    })
+
+    $("#register-button").on("click",function(){
+        if($("#register-password").val()!==$("#register-confirm-password").val()){
+            $("#register-tip").html("两次输入的密码不相同");
+        }
+        $.ajax({
+            type:"post",
+            url:apiUrl+"/register",
+            data:{
+                username:$("#register-user-name").val(),
+                password:$("#register-password").val(),
+                captchaCode: $("#register-captcha-box").attr("code"),
+                captchaResult:$("#register-captcha").val()
+            },
+            dataType:"json",
+            success:function(data){
+                console.log(data);
+                if(data.status==="true"){
+                    $("#register-user-name").val("");
+                    $("#register-password").val("");
+                    $("#register-confirm-passwordpassword").val("");
+                    $("#register-captcha-box").attr("code","");
+                    $("#register-captcha-img").css("background-image","");
+                    $("#register-captcha").val("");
+                    alert("注册成功，请登录");
+                    $("#switch-to-login").click();
+                }else{
+                    $("#register-tip").html(data.content);
+                }
+            }
+        })
+    })
+}
+
 function bind_login_box_animation(){
     $(".login-input-box").on("focus",function(){
         $(this).css("box-shadow","0 0 0 1px #399AF2").stop().animate({"border-radius":"0.3em","opacity":"1"},300);
