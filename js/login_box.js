@@ -5,7 +5,7 @@ function bind_login_controller(){
             url:apiUrl+"/login",
             data:{
                 userName:$("#login-user-name").val(),
-                userPassword:$.md5($("#login-password").val()),
+                userPassword:$("#login-password").val(),
                 captchaCode: $("#login-captcha-box").attr("code"),
                 captchaResult:$("#login-captcha").val()
             },
@@ -34,7 +34,7 @@ function bind_login_controller(){
             return;
         }
         if($("#register-user-agreement-box").hasClass("checked")===false){
-            $("#register-tip").html("请先阅读并同意用户协议。。。。。。。。。。。。。。。。。。。");
+            $("#register-tip").html("请先阅读并同意用户协议");
             return;
         }
         $.ajax({
@@ -42,7 +42,7 @@ function bind_login_controller(){
             url:apiUrl+"/register",
             data:{
                 userName:userName,
-                userPassword:$.md5(userPassword),
+                userPassword:userPassword,
                 captchaCode: captchaCode,
                 captchaResult:captchaResult
             },
@@ -50,9 +50,11 @@ function bind_login_controller(){
             success:function(data){
                 console.log(data);
                 if(data.status==="true"){
+                    $("#login-user-name").val($("#register-user-name").val());
+                    $("#login-user-name").prev().css({"color":"#399AF2","bottom":"50%","font-size":"2vmin"});
                     $("#register-user-name").val("");
                     $("#register-password").val("");
-                    $("#register-confirm-passwordpassword").val("");
+                    $("#register-confirm-password").val("");
                     $("#register-captcha-box").attr("code","");
                     $("#register-captcha-img").css("background-image","");
                     $("#register-captcha").val("");
