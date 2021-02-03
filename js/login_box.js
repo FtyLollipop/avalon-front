@@ -139,9 +139,9 @@ function bind_login_box_animation(){
         });
     })
 
-    $("#user-agreements").on("click",function(){
-        window.open("user_agreements.html");
-    })
+    // $("#user-agreements").on("click",function(){
+    //     window.open("user_agreements.html");
+    // })
 }
 
 let loginTipThread
