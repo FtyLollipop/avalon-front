@@ -58,6 +58,7 @@ function bind_login_controller(){
                     $("#register-captcha-box").attr("code","");
                     $("#register-captcha-img").css("background-image","");
                     $("#register-captcha").val("");
+                    $("#register-user-agreement-box").removeClass("checked");
                     alert("注册成功，请登录");
                     $("#switch-to-login").click();
                 }else{
